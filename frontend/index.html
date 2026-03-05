@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC | Heritage Provenance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-mesh">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="glass-header">
+        <div class="logo">
+            <h1>SONIC.</h1>
+            <span class="tagline">Zero-Trust Cultural Provenance</span>
+        </div>
+        <div class="nav-links">
+            <button class="nav-btn active" id="btn-upload">Register Heritage</button>
+            <button class="nav-btn" id="btn-discover">Discover Library</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- UPLOAD SECTION -->
+        <section id="upload-section" class="glass-card active-section">
+            <div class="form-header">
+                <h2>Secure Archive</h2>
+                <p>Register an asset immutably. The master audio never touches public servers.</p>
+            </div>
+            
+            <form id="upload-form">
+                <div class="input-group">
+                    <label>Select Master Audio (WAV/FLAC)</label>
+                    <input type="file" id="audio-file" accept="audio/*" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Community / Tribe</label>
+                        <input type="text" id="community" placeholder="e.g. Bhil (Rajasthan)" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Language</label>
+                        <input type="text" id="language" placeholder="e.g. Bhili" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Music Type</label>
+                    <input type="text" id="musicType" placeholder="e.g. Lullaby, Harvest Song" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Lyrics / Transcript (Optional)</label>
+                    <textarea id="lyrics" placeholder="e.g. Traditional verse..." rows="3" style="width: 100%; border-radius: 8px; padding: 10px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); color: white; margin-top: 5px;"></textarea>
+                </div>
+
+                <div class="license-group">
+                    <label>Allowed Licensing (Discoverable)</label>
+                    <div class="checkbox-array">
+                        <label><input type="checkbox" value="Research" checked> Research</label>
+                        <label><input type="checkbox" value="Cultural Exhibition" checked> Cultural Exhibition</label>
+                        <label><input type="checkbox" value="Media Inquiry"> Commercial / Media</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn" disabled>
+                    <span class="btn-text">Register on QLDB Ledger</span>
+                    <div class="loader hidden"></div>
+                </button>
+            </form>
+
+            <div id="upload-status" class="status-box hidden"></div>
+        </section>
+
+        <!-- DISCOVERY SECTION -->
+        <section id="discovery-section" class="glass-card hidden">
+            <div class="form-header">
+                <h2>Public Heritage Library</h2>
+                <p>Curated assets open for licensing inquiry. Only 30s degraded previews are available.</p>
+                <button id="refresh-feed" class="refresh-btn">⟳ Refresh Ledger</button>
+            </div>
+
+            <div id="feed-container" class="feed-grid">
+                <!-- Assets injected here via JS -->
+            </div>
+        </section>
+
+        <!-- PROVENANCE MODAL -->
+        <div id="provenance-modal" class="modal hidden">
+            <div class="glass-card modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Immutable Provenance Proof</h3>
+                <div class="proof-data">
+                    <div class="data-row"><span class="label">Asset ID:</span> <span class="val mono" id="prov-id">...</span></div>
+                    <div class="data-row"><span class="label">Timestamp:</span> <span class="val mono" id="prov-time">...</span></div>
+                    <div class="data-row"><span class="label">Spectral Hash (MFCC):</span> <span class="val mono" id="prov-fingerprint">...</span></div>
+                    <div class="data-row"><span class="label">Audio Hash (SHA-256):</span> <span class="val mono" id="prov-audio">...</span></div>
+                    <div class="data-row"><span class="label">Community Claim:</span> <span class="val highlight" id="prov-community">...</span></div>
+                </div>
+                <div class="modal-footer">
+                    <p class="ledger-tag">✅ Verified via Amazon QLDB</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

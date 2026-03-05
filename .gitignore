@@ -1,0 +1,9 @@
+node_modules/
+cdk.out/
+.env
+__pycache__/
+*.pyc
+logs*/
+test_out.txt
+package-lock.json
+deploy_final.txt

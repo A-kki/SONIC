@@ -1,0 +1,327 @@
+﻿node.exe : !!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!
+At C:\Program Files\no
+dejs\npx.ps1:29 char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (!!!!!!!!!!   
+ !!!!!...!!!!!!!!!    
+!!!!!!:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+!!                    
+                      
+                      
+                      
+                      
+          !!
+!!  This software has 
+not been tested with 
+node v22.14.0.        
+                      
+                      
+           !!
+!!  Should you 
+encounter odd runtime 
+issues, please try 
+using one of the 
+supported release 
+before filing a bug 
+report.  !!
+!!                    
+                      
+                      
+                      
+                      
+          !!
+!!  This software is 
+currently running on 
+node v22.14.0.        
+                      
+                      
+            !!
+!!  As of the current 
+release of this 
+software, supported 
+node releases are:    
+                      
+                  !!
+!!  - ^20.0.0 
+(Planned end-of-life: 
+2026-04-30)           
+                      
+                      
+                  !!
+!!                    
+                      
+                      
+                      
+                      
+          !!
+!!  This warning can 
+be silenced by 
+setting the JSII_SILEN
+CE_WARNING_UNTESTED_NO
+DE_VERSION 
+environment variable. 
+       !!
+!!                    
+                      
+                      
+                      
+                      
+          !!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!
+
+Γ£¿  Synthesis time: 
+21.7s
+
+SonicStack: 
+deploying... [1/1]
+SonicStack: creating 
+CloudFormation 
+changeset...
+
+ Γ¥î  SonicStack 
+failed: Error 
+[ValidationError]: 
+Template format 
+error: Unrecognized 
+resource types: 
+[AWS::QLDB::Ledger]
+    at 
+Request.extractError (
+E:\Dharohar\SONIC\node
+_modules\aws-cdk\lib\i
+ndex.js:366:46692)
+    at 
+Request.callListeners 
+(E:\Dharohar\SONIC\nod
+e_modules\aws-cdk\lib\
+index.js:366:91501)
+    at Request.emit (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:90949)
+    at Request.emit (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:199345)
+    at 
+Request.transition (E:
+\Dharohar\SONIC\node_m
+odules\aws-cdk\lib\ind
+ex.js:366:192897)
+    at AcceptorStateMa
+chine.runTo (E:\Dharoh
+ar\SONIC\node_modules\
+aws-cdk\lib\index.js:3
+66:157769)
+    at E:\Dharohar\SON
+IC\node_modules\aws-cd
+k\lib\index.js:366:158
+099
+    at 
+Request.<anonymous> (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:193189)
+    at 
+Request.<anonymous> (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:199420)
+    at 
+Request.callListeners 
+(E:\Dharohar\SONIC\nod
+e_modules\aws-cdk\lib\
+index.js:366:91669) {
+  code: 
+'ValidationError',
+  time: 2026-03-01T11:
+24:13.298Z,
+  requestId: '62b5750b
+-68fc-42e5-8f54-777b5c
+fc158a',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 
+795.9531935400246
+}
+
+ Γ¥î Deployment 
+failed: Error 
+[ValidationError]: 
+Template format 
+error: Unrecognized 
+resource types: 
+[AWS::QLDB::Ledger]
+    at 
+Request.extractError (
+E:\Dharohar\SONIC\node
+_modules\aws-cdk\lib\i
+ndex.js:366:46692)
+    at 
+Request.callListeners 
+(E:\Dharohar\SONIC\nod
+e_modules\aws-cdk\lib\
+index.js:366:91501)
+    at Request.emit (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:90949)
+    at Request.emit (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:199345)
+    at 
+Request.transition (E:
+\Dharohar\SONIC\node_m
+odules\aws-cdk\lib\ind
+ex.js:366:192897)
+    at AcceptorStateMa
+chine.runTo (E:\Dharoh
+ar\SONIC\node_modules\
+aws-cdk\lib\index.js:3
+66:157769)
+    at E:\Dharohar\SON
+IC\node_modules\aws-cd
+k\lib\index.js:366:158
+099
+    at 
+Request.<anonymous> (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:193189)
+    at 
+Request.<anonymous> (E
+:\Dharohar\SONIC\node_
+modules\aws-cdk\lib\in
+dex.js:366:199420)
+    at 
+Request.callListeners 
+(E:\Dharohar\SONIC\nod
+e_modules\aws-cdk\lib\
+index.js:366:91669) {
+  code: 
+'ValidationError',
+  time: 2026-03-01T11:
+24:13.298Z,
+  requestId: '62b5750b
+-68fc-42e5-8f54-777b5c
+fc158a',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 
+795.9531935400246
+}
+
+NOTICES         
+(What's this? https://
+github.com/aws/aws-cdk
+/wiki/CLI-Notices)
+
+34892	CDK CLI will 
+collect telemetry 
+data on command usage 
+starting at version 
+2.1100.0 (unless 
+opted out)
+
+	Overview: We do not 
+collect customer 
+content and we 
+anonymize the
+	          telemetry 
+we do collect. See 
+the attached issue 
+for more
+	          
+information on what 
+data is collected, 
+why, and how to
+	          opt-out. 
+Telemetry will NOT be 
+collected for any CDK 
+CLI
+	          version 
+prior to version 
+2.1100.0 - regardless 
+of
+	          
+opt-in/out. You can 
+also preview the 
+telemetry we will 
+start
+	          collecting 
+by logging it to a 
+local file, by adding
+	          
+`--unstable=telemetry 
+--telemetry-file=my/lo
+cal/file` to any
+	          `cdk` 
+command.
+
+	Affected versions: 
+cli: >=2.0.0 <2.1100.0
+
+	More information at: 
+https://github.com/aws
+/aws-cdk/issues/34892
+
+
+32775	(cli): CLI 
+versions and CDK 
+library versions have 
+diverged
+
+	Overview: Starting 
+in CDK 2.179.0, CLI 
+versions will no 
+longer be in
+	          lockstep 
+with CDK library 
+versions. CLI 
+versions will now be
+	          released 
+as 2.1000.0 and 
+continue with 
+2.1001.0, etc.
+
+	Affected versions: 
+cli: >=2.0.0 
+<=2.1005.0
+
+	More information at: 
+https://github.com/aws
+/aws-cdk/issues/32775
+
+
+If you donΓÇÖt want 
+to see a notice 
+anymore, use "cdk 
+acknowledge <id>". 
+For example, "cdk 
+acknowledge 34892".
+Template format 
+error: Unrecognized 
+resource types: 
+[AWS::QLDB::Ledger]
